@@ -1,11 +1,11 @@
 
 
+@import url("reset.css");
+
 @font-face {
     font-family: "Pixel Title";
     src: url('../fonts/upheavtt-webfont.woff2');
 }
-
-@import url("reset.css");
 
 body {
     background-color: rgb(34, 34, 34);
