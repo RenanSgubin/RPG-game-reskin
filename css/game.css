@@ -8,7 +8,7 @@
 }
 
 :root {
-    --floor-height: 112px;
+    --floor-height: 80px;
 }
 
 body {
@@ -36,7 +36,8 @@ body {
     align-items: center;
     flex-direction: column;
     z-index: 9998;
-    background-color: #e0e0e0;
+    background: rgb(179,225,249);
+    background: linear-gradient(180deg, rgba(179,225,249,1) 17%, rgba(254,254,254,1) 79%); 
 }
 
 .xp-a-char-options {
@@ -138,6 +139,12 @@ body {
     z-index: 1;
 }
 
+.sun-content {
+    position: absolute;
+    right: 5%;
+    top: 13%;
+}
+
 .board {
     position: absolute;
 }
@@ -162,13 +169,48 @@ body {
     filter: brightness(0.7);
 }
 
-.mage-img {
+.mage-img, .enemy-img {
     position: absolute;
-    left: 10%;
     bottom: var(--floor-height);
-    width: 176px;
+    width: 128px;
     z-index: 99999;
 }
+
+.mage-img {
+    left: 20%;
+}
+
+.enemy-img {
+    right: 20%;
+}
+
+.mountain, .tree, .two-tree, .grass, .flowers-content {
+    position: absolute;
+    bottom: var(--floor-height);
+    z-index: 9999;
+}
+
+.mountain {
+    left: 20%;
+}
+
+.tree {
+    left: 3%;
+}
+
+.two-tree {
+    left: 50%;
+}
+
+.grass {
+    left: 58%;
+}
+
+.flowers-content {
+    right: 2%;
+    display: flex;
+}
+
 
 .floor {
     position: absolute;
@@ -179,7 +221,6 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    background-color: red;
 }
 
 .floor img {
