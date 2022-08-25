@@ -13,15 +13,18 @@
 
 body {
     overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
 }
 
 .container {
     width: 100%;
+    height: 100%;
+    transition: 1s all;
 }
 
 .content {
     width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -272,6 +275,97 @@ body {
 .floor img {
     z-index: 9999999;
 }
+
+.player-store-container {
+    position: absolute;
+    top: 1%;
+    left: 187.5px;
+    display: flex;
+    transition: 0.4s ease-in-out;
+}
+
+.player-store-left-container {
+    position: relative;
+    width: 750px;
+    height: 900px;
+    z-index: 99999;
+}
+
+.player-store-left {
+    top: 0%;
+    left: 0%;
+}
+
+.pots-container {
+    position: absolute;
+    top: 170px;
+    left: 50px;
+    width: 650px;
+    display: flex;
+    justify-content: space-around;
+    z-index: 999999;
+}
+
+.merchant-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 200px;
+}
+
+.player-store {
+    position: relative;
+    top: 1%;
+    width: 750px;
+    height: 900px;
+    z-index: 99999;
+}
+
+.x-button {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    z-index: 999999;
+    cursor: pointer;
+    transition: 0.1s all;
+}
+
+.x-button:hover {
+    filter: brightness(0.7);
+}
+
+.store-div {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background-color: #ffca62;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    /*overflow-y: scroll;*/
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    background-color: #1d1d1d;
+    margin: 5px;
+}
+
+.buy-button {
+    position: absolute;
+    left: 290px;
+    bottom: 100px;
+    z-index: 9999;
+    cursor: pointer;
+}
+
 
 @keyframes outOfMana {
     25% { transform: translate(20px); }
