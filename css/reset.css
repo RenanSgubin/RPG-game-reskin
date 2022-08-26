@@ -1,4 +1,6 @@
 
+@import url('http://fonts.cdnfonts.com/css/depixel');
+
 @font-face {
     font-family: "Pixel Title";
     src: url('../fonts/upheavtt-webfont.woff2');
@@ -32,7 +34,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
     box-sizing: border-box;
-    font-family: "Pixel Title";
+    font-family: 'DePixel', sans-serif;
 }
 ol, ul {
 	list-style: none;

@@ -24,7 +24,7 @@
                             <img src="../img/book-symbol.png" alt="">
                             <img src="../img/staff-symbol.png" alt="">
                             <img src="../img/gear-symbol.png" alt="">
-                            <img src="../img/bag-symbol.png" alt="" onclick="openStore()">
+                            <img src="../img/bag-symbol.png" alt="" onclick="openStore(), merchantPhrases()">
                         </span>
                     </span>
 
@@ -99,7 +99,11 @@
    <!--Player Store-->
    <section class="player-store-container">
     <div class="player-store-left-container">
-        <span class="merchant-text">Welcome, traveler! Please, don't steal-me.</span>
+        <span class="merchant-text-container">
+            <h1 class="merchant-text">
+                Welcome, traveler! Please, don't steal-me.
+            </h1>
+        </span>
         <img src="../img/player-store-left.gif" alt="" class="player-store-left">
         <div class="pots-container">
             <img src="../img/hp-pot.png" alt="" class="pots">
@@ -114,8 +118,22 @@
     <section class="player-store">
         <img src="../img/x-button.png" alt="" class="x-button" onclick="closeStore()">
         <div class="store-div">
-            <span class="item">yp</span>
-            <span class="item">yp</span>
+            <span class="item">
+                <img src="../img/heaven-staff.png" alt="" class="staff">
+                <img src="../img/equipament-background-store.png" alt="">
+                <div class="item-price">
+                    <img src="../img/gold.png" alt="" class="gold-coin">
+                    <span>900</span>
+                </div>
+            </span>
+            <span class="item">
+                <img src="../img/aqua-staff.png" alt="" class="staff">
+                <img src="../img/equipament-background-store.png" alt="">
+                <div class="item-price">
+                    <img src="../img/gold.png" alt="" class="gold-coin">
+                    <span>900</span>
+                </div>
+            </span>
             <span class="item">yp</span>
             <span class="item">yp</span>
             <span class="item">yp</span>
@@ -145,6 +163,7 @@
    </section>
 
    <script src="../js/battle.js"></script>
-   <script src="../js/openMenus.js"></script>
+   <script src="../js/store/openStore.js"></script>
+   <script src="../js/store/merchantPhrases.js"></script>
 </body>
 </html>
