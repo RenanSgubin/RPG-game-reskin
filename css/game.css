@@ -148,6 +148,25 @@ body {
     z-index: 9999;
 }
 
+.character-itens {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    width: 143px;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.weapon-item, .armor-item, .ring-item {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
 .board {
     position: absolute;
 }
@@ -278,7 +297,7 @@ body {
 
 .player-store-container {
     position: absolute;
-    top: 1%;
+    top: -150%;
     left: 187.5px;
     display: flex;
     transition: 0.4s ease-in-out;
