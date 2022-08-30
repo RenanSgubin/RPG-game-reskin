@@ -153,18 +153,24 @@ body {
     top: 50%;
     left: 0%;
     transform: translateY(-50%);
-    width: 143px;
-    height: 20vh;
+    width: 120px;
+    height: 380px;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
     flex-direction: column;
 }
 
-.weapon-item, .armor-item, .ring-item {
-    width: 100%;
-    height: 64px;
+.weapon-item {
+    height: 104px;
     display: flex;
-    justify-content: start;
     align-items: center;
+    justify-content: center;
+}
+
+.equipament-border {
+    position: absolute;
+    z-index: -1;
 }
 
 .board {
@@ -297,7 +303,7 @@ body {
 
 .player-store-container {
     position: absolute;
-    top: -150%;
+    top: 1%;
     left: 187.5px;
     display: flex;
     transition: 0.4s ease-in-out;
@@ -365,13 +371,26 @@ body {
     filter: brightness(0.7);
 }
 
+.equipaments-symbol {
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    right: 50px;
+    width: 60%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .store-div {
     position: absolute;
-    top: 45%;
+    top: 47%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 600px;
-    height: 600px;
+    height: 500px;
     background-color: #ffca62;
     z-index: 9999;
     display: flex;
