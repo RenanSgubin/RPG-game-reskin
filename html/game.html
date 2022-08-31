@@ -14,9 +14,18 @@
                 <section class="xp-a-char-options">
                     <span class="xp-content">
                         <img src="../img/mini-mage-moldure.gif" alt="" class="moldure">
-                        <div class="speak-area">
-                            <span>My mom told me that i'm very beautiful...</span>
-                        </div>
+                        <section class="xp-life-bars-container">
+                            <div class="life-bar-content">
+                                <h5 class="life-text">100/100</h5>
+                                <span class="life-bar-span"></span>
+                                <img src="../img/life-bar.png" alt="" class="life-bar">
+                            </div>
+                            <div class="life-bar-content">
+                                <h5 class="xp-text">5/38</h5>
+                                <span class="xp-bar-span"></span>
+                                <img src="../img/life-bar.png" alt="" class="life-bar">
+                            </div>
+                        </section>
                     </span>
                     <span class="char-options-container">
                         <img src="../img/board.png" alt="" class="board">
@@ -48,8 +57,6 @@
             </section>
 
             <div class="mage-content">
-                <span class="life-bar-span">100/100</span>
-                <img src="../img/life-bar.png" alt="" class="life-bar">
                 <img src="../img/mini-mage.gif" alt="" class="mage-img">
             </div>
             <div class="enemy-content">
@@ -132,27 +139,27 @@
     <section class="player-store">
         <img src="../img/x-button.png" alt="" class="x-button" onclick="closeStore()">
         <section class="equipaments-symbol">
-            <img src="../img/store-sword-symbol.png" alt="">
-            <img src="../img/store-armor-symbol.png" alt="">
-            <img src="../img/store-ring-symbol.png" alt="">
+            <img src="../img/store-sword-symbol.png" alt="" onclick="showWeapons()" style="cursor: pointer;">
+            <img src="../img/store-armor-symbol.png" alt="" onclick="showArmors()" style="cursor: pointer;">
+            <img src="../img/store-ring-symbol.png" alt="" onclick="showRings()" style="cursor: pointer;">
         </section>
         <div class="store-div">
-            <span class="item">
+            <button class="item">
                 <img src="../img/heaven-staff.png" alt="" class="staff">
                 <img src="../img/equipament-background-store.png" alt="">
                 <div class="item-price">
                     <img src="../img/gold.png" alt="" class="gold-coin">
                     <span>900</span>
                 </div>
-            </span>
-            <span class="item">
+            </button>
+            <button class="item">
                 <img src="../img/aqua-staff.png" alt="" class="staff">
                 <img src="../img/equipament-background-store.png" alt="">
                 <div class="item-price">
                     <img src="../img/gold.png" alt="" class="gold-coin">
                     <span>900</span>
                 </div>
-            </span>
+            </button>
             <span class="item">
                 <img src="../img/lightning-staff.png" alt="" class="staff">
                 <img src="../img/equipament-background-store.png" alt="">
@@ -231,6 +238,212 @@
             <span class="item">yp</span>
         </div>
 
+
+        <!--Armors-->
+        <div class="armors-store-div">
+            <span class="item">
+                <img src="../img//silver-armor.png" alt="" class="staff">
+                <img src="../img/equipament-background-store.png" alt="">
+                <div class="item-price">
+                    <img src="../img/gold.png" alt="" class="gold-coin">
+                    <span>900</span>
+                </div>
+            </span>
+            <span class="item">
+                <img src="../img/silver-boots.png" alt="" class="staff">
+                <img src="../img/equipament-background-store.png" alt="">
+                <div class="item-price">
+                    <img src="../img/gold.png" alt="" class="gold-coin">
+                    <span>900</span>
+                </div>
+            </span>
+            <span class="item">
+                <img src="../img/golden-armor.png" alt="" class="staff">
+                <img src="../img/equipament-background-store.png" alt="">
+                <div class="item-price">
+                    <img src="../img/gold.png" alt="" class="gold-coin">
+                    <span>900</span>
+                </div>
+            </span>
+            <span class="item">
+                <img src="../img/golden-boots.png" alt="" class="staff">
+                <img src="../img/equipament-background-store.png" alt="">
+                <div class="item-price">
+                    <img src="../img/gold.png" alt="" class="gold-coin">
+                    <span>900</span>
+                </div>
+            </span>
+            <span class="item">
+                <img src="../img/platinum-armor.png" alt="" class="staff">
+                <img src="../img/equipament-background-store.png" alt="">
+                <div class="item-price">
+                    <img src="../img/gold.png" alt="" class="gold-coin">
+                    <span>900</span>
+                </div>
+            </span>
+            <span class="item">
+                <img src="../img/platinum-boots.png" alt="" class="staff">
+                <img src="../img/equipament-background-store.png" alt="">
+                <div class="item-price">
+                    <img src="../img/gold.png" alt="" class="gold-coin">
+                    <span>900</span>
+                </div>
+            </span>
+            <span class="item">
+                <img src="../img/guardian-armor.png" alt="" class="staff">
+                <img src="../img/equipament-background-store.png" alt="">
+                <div class="item-price">
+                    <img src="../img/gold.png" alt="" class="gold-coin">
+                    <span>900</span>
+                </div>
+            </span>
+            <span class="item">
+                <img src="../img/guardian-boots.png" alt="" class="staff">
+                <img src="../img/equipament-background-store.png" alt="">
+                <div class="item-price">
+                    <img src="../img/gold.png" alt="" class="gold-coin">
+                    <span>900</span>
+                </div>
+            </span>
+            <span class="item">
+                <img src="../img/magic-mesh-armor.png" alt="" class="staff">
+                <img src="../img/equipament-background-store.png" alt="">
+                <div class="item-price">
+                    <img src="../img/gold.png" alt="" class="gold-coin">
+                    <span>900</span>
+                </div>
+            </span>
+            <span class="item">
+                <img src="../img/magic-mesh-boots.png" alt="" class="staff">
+                <img src="../img/equipament-background-store.png" alt="">
+                <div class="item-price">
+                    <img src="../img/gold.png" alt="" class="gold-coin">
+                    <span>900</span>
+                </div>
+            </span>
+            <span class="item">yp</span>
+            <span class="item">yp</span>
+            <span class="item">yp</span>
+            <span class="item">yp</span>
+            <span class="item">yp</span>
+            <span class="item">yp</span>
+            <span class="item">yp</span>
+            <span class="item">yp</span>
+            <span class="item">yp</span>
+            <span class="item">yp</span>
+            <span class="item">yp</span>
+        </div>
+
+
+        <!--Rings-->
+        <div class="rings-store-div">
+            <span class="item">
+                <img src="../img/life-ring.png" alt="" class="staff">
+                <img src="../img/equipament-background-store.png" alt="">
+                <div class="item-price">
+                    <img src="../img/gold.png" alt="" class="gold-coin">
+                    <span>900</span>
+                </div>
+            </span>
+            <span class="item">
+                <img src="../img/magic-ring.png" alt="" class="staff">
+                <img src="../img/equipament-background-store.png" alt="">
+                <div class="item-price">
+                    <img src="../img/gold.png" alt="" class="gold-coin">
+                    <span>900</span>
+                </div>
+            </span>
+            <span class="item">
+                <img src="../img/super-life-ring.png" alt="" class="staff">
+                <img src="../img/equipament-background-store.png" alt="">
+                <div class="item-price">
+                    <img src="../img/gold.png" alt="" class="gold-coin">
+                    <span>900</span>
+                </div>
+            </span>
+            <span class="item">
+                <img src="../img/ultimate-life-ring.png" alt="" class="staff">
+                <img src="../img/equipament-background-store.png" alt="">
+                <div class="item-price">
+                    <img src="../img/gold.png" alt="" class="gold-coin">
+                    <span>900</span>
+                </div>
+            </span>
+            <span class="item">
+                <img src="../img/super-magic-ring.png" alt="" class="staff">
+                <img src="../img/equipament-background-store.png" alt="">
+                <div class="item-price">
+                    <img src="../img/gold.png" alt="" class="gold-coin">
+                    <span>900</span>
+                </div>
+            </span>
+            <span class="item">
+                <img src="../img/ultimate-magic-ring.png" alt="" class="staff">
+                <img src="../img/equipament-background-store.png" alt="">
+                <div class="item-price">
+                    <img src="../img/gold.png" alt="" class="gold-coin">
+                    <span>900</span>
+                </div>
+            </span>
+            <span class="item">
+                <img src="../img/ultimate-defense-ring.png" alt="" class="staff">
+                <img src="../img/equipament-background-store.png" alt="">
+                <div class="item-price">
+                    <img src="../img/gold.png" alt="" class="gold-coin">
+                    <span>900</span>
+                </div>
+            </span>
+            <span class="item">
+                <img src="../img/defense-ring.png" alt="" class="staff">
+                <img src="../img/equipament-background-store.png" alt="">
+                <div class="item-price">
+                    <img src="../img/gold.png" alt="" class="gold-coin">
+                    <span>900</span>
+                </div>
+            </span>
+            <span class="item">
+                <img src="../img/super-defense-ring.png" alt="" class="staff">
+                <img src="../img/equipament-background-store.png" alt="">
+                <div class="item-price">
+                    <img src="../img/gold.png" alt="" class="gold-coin">
+                    <span>900</span>
+                </div>
+            </span>
+            <span class="item">
+                <img src="../img/hp-def-belt.png" alt="" class="staff">
+                <img src="../img/equipament-background-store.png" alt="">
+                <div class="item-price">
+                    <img src="../img/gold.png" alt="" class="gold-coin">
+                    <span>900</span>
+                </div>
+            </span>
+            <span class="item">
+                <img src="../img/hp-magic-belt.png" alt="" class="staff">
+                <img src="../img/equipament-background-store.png" alt="">
+                <div class="item-price">
+                    <img src="../img/gold.png" alt="" class="gold-coin">
+                    <span>900</span>
+                </div>
+            </span>
+            <span class="item">
+                <img src="../img/def-magic-belt.png" alt="" class="staff">
+                <img src="../img/equipament-background-store.png" alt="">
+                <div class="item-price">
+                    <img src="../img/gold.png" alt="" class="gold-coin">
+                    <span>900</span>
+                </div>
+            </span>
+            <span class="item">yp</span>
+            <span class="item">yp</span>
+            <span class="item">yp</span>
+            <span class="item">yp</span>
+            <span class="item">yp</span>
+            <span class="item">yp</span>
+            <span class="item">yp</span>
+            <span class="item">yp</span>
+            <span class="item">yp</span>
+        </div>
+
         <img src="../img/buy-button.png" alt="" class="buy-button" onclick="buyItem()" on>
 
         <img src="../img/player-store.png" alt="">
@@ -240,5 +453,6 @@
    <script src="../js/battle.js"></script>
    <script src="../js/store/openStore.js"></script>
    <script src="../js/store/merchantPhrases.js"></script>
+   <script src="../js/store/showEquipamentsStore.js"></script>
 </body>
 </html>

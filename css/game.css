@@ -65,48 +65,47 @@ body {
 }
 
 .moldure {
-    height: 136px;
     z-index: 2;
 }
 
-.speak-area {
-    position: relative;
-    width: 100%;
-    height: 136px;
-    background-color: #1d1d1d;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-    color: #c1c1c1;
+.xp-life-bars-container {
+    flex-direction: column;
+    height: 112px;
 }
 
-.speak-area::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 15px;
-    bottom: 15px;
-    left: -15px;
-    right: -15px;
-    background: #1d1d1d;
-    z-index: -1;
+.life-bar-content {
+    position: relative;
+    width: 276px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
-  
-.speak-area::after {
-    content: "";
-    display: block;
+
+.life-bar-span, .xp-bar-span {
     position: absolute;
     top: 6px;
-    bottom: 6px;
-    left: -9px;
-    right: -9px;
-    background: #1d1d1d;
-    z-index: -1;
+    width: 30px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.speak-area span {
-    width: 70%;
+.life-bar-span {
+    background-color: rgb(218, 56, 56);
+}
+
+.xp-bar-span {
+    background-color: rgb(84, 176, 85);
+}
+
+.life-text, .xp-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #181818;
 }
 
 .level {
@@ -204,24 +203,6 @@ body {
     align-items: flex-end;
 }
 
-.life-bar {
-    position: absolute;
-    top: 0%;
-}
-
-.life-bar-span {
-    position: absolute;
-    top: 12px;
-    left: 54px;
-    width: 156px;
-    height: 42px;
-    background-color: rgb(218, 56, 56);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #d2d2d2;
-}
-
 .mage-content, .enemy-content {
     position: absolute;
     bottom: var(--floor-height);
@@ -303,7 +284,7 @@ body {
 
 .player-store-container {
     position: absolute;
-    top: 1%;
+    top: -150%;
     left: 187.5px;
     display: flex;
     transition: 0.4s ease-in-out;
@@ -384,7 +365,7 @@ body {
     align-items: center;
 }
 
-.store-div {
+.store-div, .armors-store-div, .rings-store-div {
     position: absolute;
     top: 47%;
     left: 50%;
@@ -401,6 +382,10 @@ body {
     overflow-y: scroll;
 }
 
+.armors-store-div, .rings-store-div {
+    display: none;
+}
+
 .item {
     position: relative;
     width: 100px;
@@ -410,6 +395,27 @@ body {
     align-items: center;
     justify-content: center;
     margin: 5px;
+    cursor: pointer;
+    transition: 0.2s all;
+    border: 0;
+    font-family: 'DePixel', sans-serif;
+    object-fit:cover;
+    object-position:50% 50%;
+    image-rendering: high-quality;
+}
+
+.staff {
+    image-rendering: pixelated;
+}
+
+.item:focus {
+    transform: scale(1.05);
+    margin: 20px;
+}
+
+.item:focus > .item-price {
+    -webkit-box-shadow: 0px 9px 0px 0px #202020; 
+    box-shadow: 0px 9px 0px 0px #202020;
 }
 
 .staff {
