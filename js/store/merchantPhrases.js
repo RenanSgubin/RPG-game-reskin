@@ -1,18 +1,21 @@
 
+document.getElementsByClassName("merchant-text-no-sort")[0].style.display = "flex";
+
 function merchantPhrases() {
 
-    const phrases = [
-        "I don't know how to use a staff.", 
-        "I don't know how i appeared here, but now i'm a merchant.",
-        "My mom told me i'm very beatiful, is this true?"
-    ];
+    merchantPhrasesNumber = 5;
 
-    let sortedPhrase = Math.floor(Math.random() * phrases.length);
+    let sortedPhrase = Math.floor(Math.random() * merchantPhrasesNumber);
 
-    document.getElementsByClassName("merchant-text")[0].innerHTML = phrases[sortedPhrase];
+    for(let i = 0; i < merchantPhrasesNumber; i++) {
+        document.getElementsByClassName("merchant-text")[i].style.display = "none"
+    }
+    document.getElementsByClassName("merchant-text-no-sort")[0].style.display = "none";
+    document.getElementsByClassName("merchant-text")[sortedPhrase].style.display = "flex";
+    document.getElementsByClassName("merchant-text")[sortedPhrase].style.animation = "typing 1.5s steps(40, end)";
     
 }
 
 window.onload = () => {
-    setInterval(merchantPhrases, 2000);
+    setInterval(merchantPhrases, 8000);
 }

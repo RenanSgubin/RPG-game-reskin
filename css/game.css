@@ -327,7 +327,7 @@ body {
 
 .player-store-container {
     position: absolute;
-    top: -1%;
+    top: -150%;
     left: 187.5px;
     display: flex;
     transition: 0.4s ease-in-out;
@@ -363,6 +363,14 @@ body {
 }
 
 .merchant-text {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    color: #d0d0d0;
+    display: none;
+}
+
+.merchant-text-no-sort {
     overflow: hidden;
     white-space: nowrap;
     margin: 0 auto;
@@ -460,16 +468,16 @@ body {
     position: absolute;
     top: 75px;
     left: 50%;
-    transform: translateX(-50%);
     right: 50px;
-    width: 60%;
+    transform: translateX(-50%);
+    width: 80%;
     height: 8vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.store-div, .armors-store-div, .rings-store-div {
+.store-div, .armors-store-div, .rings-store-div, .potions-store-div {
     position: absolute;
     top: 47%;
     left: 50%;
@@ -486,7 +494,7 @@ body {
     overflow-y: scroll;
 }
 
-.armors-store-div, .rings-store-div {
+.armors-store-div, .rings-store-div, .potions-store-div {
     display: none;
 }
 
@@ -562,6 +570,26 @@ body {
     bottom: 100px;
     z-index: 9999;
     cursor: pointer;
+}
+
+.player-stats-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1360px;
+    height: 800px;
+    transform: translate(-50%,-50%);
+    z-index: 9999999;
+}
+
+.player-stats-image-screen {
+    position: absolute;
+}
+
+.character-stats-close-button {
+    position: absolute;
+    bottom: -1.5%;
+    right: 6%;
 }
 
 

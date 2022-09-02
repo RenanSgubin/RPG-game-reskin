@@ -9,7 +9,6 @@
 <body>
    <div class="container">
        <div class="content">
-
             <section class="character">
                 <section class="xp-a-char-options">
                     <span class="xp-content">
@@ -34,9 +33,9 @@
                         <img src="../img/board.png" alt="" class="board">
                         <span class="char-options">
                             <img src="../img/book-symbol.png" alt="">
-                            <img src="../img/staff-symbol.png" alt="">
+                            <img src="../img/staff-symbol.png" alt="" onclick="openStore(), merchantPhrases()">
                             <img src="../img/gear-symbol.png" alt="">
-                            <img src="../img/bag-symbol.png" alt="" onclick="openStore(), merchantPhrases()">
+                            <img src="../img/bag-symbol.png" alt="">
                         </span>
                     </span>
 
@@ -126,9 +125,12 @@
    <section class="player-store-container">
     <div class="player-store-left-container">
         <span class="merchant-text-container">
-            <h1 class="merchant-text">
-                Welcome, traveler! Please, don't steal-me.
-            </h1>
+            <div class="merchant-text-no-sort" style="display: flex;">I don't know how to use a staff.</div>
+            <div class="merchant-text">I don't know how to use a staff.</div>
+            <div class="merchant-text">I don't know how i appeared here, but now i'm a merchant.</div>
+            <div class="merchant-text">My mom told me i'm very beatiful, is this true?</div>
+            <div class="merchant-text">Please, can you don't steal me?</div>
+            <div class="merchant-text">I have fear of these monsters, they give-me chills.</div>
         </span>
         <img src="../img/player-store-left.gif" alt="" class="player-store-left">
         <div class="pots-container">
@@ -161,6 +163,7 @@
             <img src="../img/store-sword-symbol.png" alt="" onclick="showWeapons()" style="cursor: pointer;">
             <img src="../img/store-armor-symbol.png" alt="" onclick="showArmors()" style="cursor: pointer;">
             <img src="../img/store-ring-symbol.png" alt="" onclick="showRings()" style="cursor: pointer;">
+            <img src="../img/store-potion-symbol.png" alt="" onclick="showPotions()" style="cursor: pointer;">
         </section>
         <div class="store-div">
             <button class="item">
@@ -458,10 +461,89 @@
             <span class="item">yp</span>
         </div>
 
+
+        <!--Potions-->
+         <div class="potions-store-div">
+            <button class="item">
+                <img src="../img/hp-pot.png" alt="" class="staff" style="height: 64px;">
+                <img src="../img/equipament-background-store.png" alt="">
+                <div class="item-price">
+                    <img src="../img/gold.png" alt="" class="gold-coin">
+                    <span>1200</span>
+                </div>
+            </button>
+            <button class="item">
+                <img src="../img/violet-pot.png" alt="" class="staff" style="height: 64px;">
+                <img src="../img/equipament-background-store.png" alt="">
+                <div class="item-price">
+                    <img src="../img/gold.png" alt="" class="gold-coin">
+                    <span>1200</span>
+                </div>
+            </button>
+            <button class="item">
+                <img src="../img/blue-pot.png" alt="" class="staff" style="height: 64px;">
+                <img src="../img/equipament-background-store.png" alt="">
+                <div class="item-price">
+                    <img src="../img/gold.png" alt="" class="gold-coin">
+                    <span>1200</span>
+                </div>
+            </button>
+            <button class="item">
+                <img src="../img/yellow-pot.png" alt="" class="staff" style="height: 64px;">
+                <img src="../img/equipament-background-store.png" alt="">
+                <div class="item-price">
+                    <img src="../img/gold.png" alt="" class="gold-coin">
+                    <span>1200</span>
+                </div>
+            </button>
+            <button class="item">
+                <img src="../img/pink-pot.png" alt="" class="staff" style="height: 64px;">
+                <img src="../img/equipament-background-store.png" alt="">
+                <div class="item-price">
+                    <img src="../img/gold.png" alt="" class="gold-coin">
+                    <span>1200</span>
+                </div>
+            </button>
+            <button class="item">
+                <img src="../img/brown-pot.png" alt="" class="staff" style="height: 64px;">
+                <img src="../img/equipament-background-store.png" alt="">
+                <div class="item-price">
+                    <img src="../img/gold.png" alt="" class="gold-coin">
+                    <span>1200</span>
+                </div>
+            </button>
+            <button class="item">
+                <img src="../img/green-pot.png" alt="" class="staff" style="height: 64px;">
+                <img src="../img/equipament-background-store.png" alt="">
+                <div class="item-price">
+                    <img src="../img/gold.png" alt="" class="gold-coin">
+                    <span>1200</span>
+                </div>
+            </button>
+            <span class="item">yp</span>
+            <span class="item">yp</span>
+            <span class="item">yp</span>
+            <span class="item">yp</span>
+            <span class="item">yp</span>
+            <span class="item">yp</span>
+            <span class="item">yp</span>
+            <span class="item">yp</span>
+            <span class="item">yp</span>
+        </div>
+
         <img src="../img/buy-button.png" alt="" class="buy-button" onclick="buyItem()" on>
 
         <img src="../img/player-store.png" alt="">
        </section>
+   </section>
+   <!--Store End-->
+
+
+
+
+   <section class="player-stats-container">
+    <img src="../img/character-stats-screen.png" alt="" class="player-stats-image-screen">
+    <img src="../img/character-stats-close-button.png" alt="" class="character-stats-close-button">
    </section>
 
    <script src="../js/battle.js"></script>
