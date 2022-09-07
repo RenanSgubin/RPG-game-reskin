@@ -38,8 +38,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: rgb(179,225,249);
-    background: linear-gradient(180deg, rgba(179,225,249,1) 17%, rgba(254,254,254,1) 79%); 
+    background: linear-gradient(180deg, rgb(72, 159, 239) 17%, rgba(254,254,254,1) 79%); 
 }
 
 .xp-a-char-options {
@@ -72,7 +71,7 @@ body {
     position: absolute;
     top: 96px;
     left: 4px;
-    width: 92px;
+    width: 86px;
     height: 4.6vh;
     background-color: #202020;
     display: flex;
@@ -226,17 +225,37 @@ body {
     filter: brightness(0.7);
 }
 
-.mage-content {
+.character-content {
     left: 20%;
     height: 230px;
     display: flex;
     align-items: flex-end;
 }
 
-.mage-content, .enemy-content {
+.character-content, .enemy-content {
     position: absolute;
     bottom: var(--floor-height);
     z-index: 99999;
+}
+
+.character-equiped-itens-content {
+    position: absolute;
+    bottom: 0%;
+    width: 108px;
+    height: 180px;
+}
+
+.character-img {
+    position: absolute;
+    bottom: 0%;
+    width: 108px;
+    image-rendering: pixelated;
+}
+
+.equiped-sword {
+    position: absolute;
+    bottom: 12px;
+    left: 108px;
 }
 
 .enemy-content {
@@ -302,7 +321,7 @@ body {
 .cloud-1 {
     position: absolute;
     top: 5%;
-    right: 10%;
+    right: 20%;
 }
 
 .cloud-2 {
@@ -574,12 +593,13 @@ body {
 
 .player-stats-container {
     position: absolute;
-    top: 50%;
+    top: -150%;
     left: 50%;
     width: 1674px;
     height: 828px;
     transform: translate(-50%,-50%);
     z-index: 9999999;
+    transition: 0.4s ease-in-out;
 }
 
 .player-stats-container img {
@@ -594,6 +614,12 @@ body {
     position: absolute;
     bottom: -1.5%;
     right: 6%;
+    cursor: pointer;
+    transition: 0.1s all;
+}
+
+.character-stats-close-button:hover {
+    filter: brightness(75%);
 }
 
 .ribbon-stats {
@@ -622,13 +648,20 @@ body {
 }
 
 .stats-text-buttons-container {
-    width: 320px;
+    width: 370px;
+    height: 80px;
     display: flex;
     justify-content:space-between;
+    align-items: center;
     font-size: 1.3rem;
 }
 
-.stats-text-buttons-container h5 {
+.stats-text-buttons-container span {
+    position: relative;
+    width: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin: 20px;
 }
 
@@ -648,30 +681,98 @@ body {
 }
 
 .player-stats-skin {
+    position: relative;
     width: 400px;
-    height: 500px;
+    height: 530px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     z-index: 9999999;
 }
 
-.mini-mage-stats {
-    width: 275px;
-    
+.character-stats {
+    width: 308px;
 }
 
 .player-level-stats {
     display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: #d4d4d4;
+}
+
+.player-stats-xp-container {
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translateX(-50%);
+    width: 220px;
+    height: 40px;
+    display: flex;
+    justify-content: start;
+}
+
+.player-stats-xp-span {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    width: 30px;
+    height: 20px;
+    background-color: #9bd075;
+}
+
+.player-stats-level-bar {
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translateX(-50%);
+    z-index: -1;
 }
 
 .player-stats-kills {
     width: 33%;
-    height: 800px;
-    background-color: red;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     z-index: 9999999;
+}
+
+.about-run-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+}
+
+.about-run-title span {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+
+.about-run-title hr {
+    width: 25px;
+    height: 0.3px;
+}
+
+.player-stats-kills-texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-stats-kills-texts div {
+    width: 250px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 10px;
+    font-size: 1.4rem;
 }
 
 
