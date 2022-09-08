@@ -182,7 +182,7 @@ body {
     left: 0%;
     transform: translateY(-50%);
     width: 120px;
-    height: 380px;
+    height: 550px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -256,6 +256,31 @@ body {
     position: absolute;
     bottom: 12px;
     left: 108px;
+}
+
+.equiped-shield {
+    position: absolute;
+    bottom: 12px;
+    left: 0px;
+    z-index: 1;
+}
+
+.equiped-armor {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+}
+
+.equiped-boots {
+    position: absolute;
+    bottom: 0px;
+    left: 24px;
+}
+
+.equiped-helmet {
+    position: absolute;
+    top: 36px;
+    left: 24px;
 }
 
 .enemy-content {
